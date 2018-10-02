@@ -7,7 +7,7 @@ import (
 	"net"
 	"os"
 	"time"
-	"shared"
+	"holepunching/shared"
 )
 
 
@@ -101,7 +101,7 @@ func KeepReceiving(UDPChannel *net.UDPConn) {
 
 func GetCmdArguments() (string, string, string, string) {
 	if len(os.Args) != 5 {
-		log.Fatal("usage: ", os.Args[0], "server nick target port")
+		log.Fatal("usage: ", os.Args[0], "server nick target local-port")
 	}
 
 	port := fmt.Sprintf(":%s", os.Args[4])

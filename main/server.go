@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 	"os"
-	"shared"
+	"holepunching/shared"
 )
 
 
